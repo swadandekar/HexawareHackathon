@@ -1,0 +1,108 @@
+IPKw9JQEIQiwDPrekS9dJrTHocZvwWS2LWyy7cRiPxi2fr0/kxGHdA9JJv/vo20lmS0rl4P9r7gNM8/0Ah8Oj0Y=
+
+add 1PbcYuPS1w53g1PwuzHLafh2zo7HhypDWn
+
+Message 1PbcYuPS1w53g1PwuzHLafh2zo7HhypDWn:1537895881:StarRegistry
+
+
+1PbcYuPS1w53g1PwuzHLafh2zo7HhypDWn
+
+http://localhost:8000/stars/address:dummyAddress
+
+2NB6qNDf8GZrkwsJTrLxhL2dEJznKz1ip53
+
+
+1537300262
+15 32 29 6090
+
+The entered address does not refer to a key. Please check the address and try again.
+
+let address = '142BDCeSGbXjWKaAnYXbMpZ6sbrSAo3DpZ'
+let signature = 'IJtpSFiOJrw/xYeucFxsHvIRFJ85YSGP8S1AEZxM4/obS3xr9iz7H0ffD7aM2vugrRaCi/zxaPtkflNzt5ykbc0='
+let message = '142BDCeSGbXjWKaAnYXbMpZ6sbrSAo3DpZ:1532330740:starRegistry'
+
+console.log(bitcoinMessage.verify(message, address, signature))
+
+2N5NoEaeoAGTybKUqW3JSxvoYCZdtHhJ31S
+
+2MwpEFMWsTMBqMoSHNRvFZitW52UpLXEYU1
+
+receieving--- projet4 2N52FHABBpnvQJHdmCPvDePmNtHHXqXcDR2
+
+
+
+message-signature/validate
+
+var addressValidations = {} ; addressValidations[address]= { timeStamp, signature, valid, etc }
+
+{"address":"2N5NoEaeoAGTybKUqW3JSxvoYCZdtHhJ31S","requestTimeStamp":"1537557801","message":"2N5NoEaeoAGTybKUqW3JSxvoYCZdtHhJ31S:1537557801:StarRegistry","validationWindow":"300"}
+
+/message-signature/validate
+
+http://localhost:8000/requestValidation
+{
+	"address":"2N5NoEaeoAGTybKUqW3JSxvoYCZdtHhJ31S"
+}
+
+http://localhost:8000/message-signature/validate
+
+{
+  "address": "2N5NoEaeoAGTybKUqW3JSxvoYCZdtHhJ31S",
+  "signature": "H6ZrGrF0Y4rMGBMRT2+hHWGbThTIyhBS0dNKQRov9Yg6GgXcHxtO9GJN4nwD2yNXpnXHTWU9i+qdw5vpsooryLU="
+}
+
+
+{
+	"address": "142BDCeSGbXjWKaAnYXbMpZ6sbrSAo3DpZ",
+  "star": {
+    "dec": "2",
+    "ra": "16",
+    "story": "Found"
+  }
+}
+
+
+{
+	"address": "142BDCeSGbXjWKaAnYXbMpZ6sbrSAo3DpZ",
+  "star": {
+    "dec":  "-26° 29\u0027 24.9",
+    "ra": "16h 29m 1.0s",
+    "story": "Found"
+  }
+}
+
+
+
+{"hash":"da16689e5c7f789c20273cd516e3e396cbaa9c86a5fd4d44a528ffc4ab38e36c",
+"height":4,
+"body":"{
+	\"address\":\"\",
+	\"Star\":
+		{\"dec\":\"-26° 29' 24.9\",
+		\"ra\":\"16h 29m 1.0s\",
+		\"story\":\"Found\"
+		}
+	}",
+"time":"1537677382",
+"previousBlockHash":"02f11053407cbce5cad5a445115f40c5cb197e6b95b72a2b2de729a799adc38f"}
+
+
+
+{
+  "hash": "a59e9e399bc17c2db32a7a87379a8012f2c8e08dd661d7c0a6a4845d4f3ffb9f",
+  "height": 1,
+  "body": {
+    "address": "142BDCeSGbXjWKaAnYXbMpZ6sbrSAo3DpZ",
+    "star": {
+      "ra": "16h 29m 1.0s",
+      "dec": "-26° 29' 24.9",
+      "story": "466f756e642073746172207573696e672068747470733a2f2f7777772e676f6f676c652e636f6d2f736b792f"
+    }
+  },
+  "time": "1532296234",
+  "previousBlockHash": "49cce61ec3e6ae664514d5fa5722d86069cf981318fc303750ce66032d0acff3"
+}
+
+	Generate your private key using this. . "bitcoin.crypto.sha256"
+
+bitcoin.ECPair.fromPrivateKey

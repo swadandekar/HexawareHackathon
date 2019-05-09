@@ -1,0 +1,25 @@
+{
+  "name": "hapi-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "await": "^0.2.6",
+    "bitcoinjs-lib": "^4.0.2",
+    "bitcoinjs-message": "^2.0.0",
+    "crypto-js": "^3.1.9-1",
+    "hapi": "^17.5.3",
+    "hapi-bodyparser": "^2.0.2",
+    "joi": "^13.6.0",
+    "level": "^4.0.0",
+    "module": "^1.2.5",
+    "reject": "0.0.1",
+    "resolve": "^1.8.1"
+  }
+}

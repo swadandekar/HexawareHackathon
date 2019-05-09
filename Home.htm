@@ -1,0 +1,88 @@
+<html>
+<head>
+<title> KYC on Blockchain </title>
+  <link rel="stylesheet" href="Styles/Web.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="Styles/Kendo/kendo.common.min.css">
+<link rel="stylesheet" href="Styles/Kendo/kendo.default.min.css">
+
+<script src="Scripts/MenuJS.js"></script>
+ <script src="Scripts/KendoUI/jquery.min.js"></script>
+ <script src="Scripts/KendoUI/kendo.all.min.js"></script>
+ <script src="Scripts/RestAPICall.js"></script>
+ <script src="Scripts/KendoHelper.js"></script>
+
+</head>
+
+<body>
+ 	<div class="mainHeader"><h1 style=" margin-left: 1vw;">KYC On Blockchain</h1></div>
+	<div id="MainSectionContent" class="MainSectionContent">
+ 		<div class="Main">
+            		<div class="QuickActions" id="QuickActionsContainer">
+               
+    				<div id="leftQuickActions">
+        				<div class="quickActionItemDefault" id="requestValidation" onclick="quickActionItemClicked(this);"><span class="QuickActionsLabel">Request Validation</span></div><div><span class="quickActionSeparator">|</span></div>
+           				<div class="quickActionItemDefault" id="createClient" onclick="quickActionItemClicked(this);"><span  class="QuickActionsLabel">Create Client</span></div><div><span class="quickActionSeparator">|</span></div>
+        				<div class="quickActionItemDefault" id="searchByAddress" onclick="quickActionItemClicked(this);"><span  class="QuickActionsLabel">Search Client by wallet address</span></div><div><span class="quickActionSeparator">|</span></div>
+        				<div class="quickActionItemDefault" id="searchByHash" onclick="quickActionItemClicked(this);"><span  class="QuickActionsLabel">Search Client by hash</span></div>
+   
+            			</div>
+	    		</div>
+			<div id="Content" class ="Content">
+				<div id="ContentHeader" class="ContentHeader">       
+	    					<div id="RequestValidationGridHeader" style="display:none;"> 
+							<h5  style="font-size: 20px;font-family: Calibri;color:#ffffff;"> Request Validation </h5>
+							 Address: <input type="text" id="inputAddress">
+							 <button id ="btnRequestValidation" onclick="callRequestValidation();">Validate Request</button><br>
+							</div>
+	    					<div id="SignValidationGridHeader" style="display:none;"> <h5  style="font-size: 20px;font-family: Calibri;color:#ffffff;"> Sign Validation </h5></div>
+	    					<div id="CreateClientGridHeader" style="display:none;"> 
+							<h5  style="font-size: 20px;font-family: Calibri;color:#ffffff;"> Create Client </h5>
+							<table>
+							<tr>
+								<td>Address</td>
+								<td>Client TIN</td>
+								<td>Display Name</td>
+								<td>Comment</td>
+							</tr>
+							<tr>
+								<td><input type="text" id="inputClientAddress"></td>
+								<td><input type="text" id="inputClientTIN"></td>
+								<td><input type="text" id="inputClientName"></td>
+								<td><input type="text" id="inputClientComment"></td>
+							</tr>
+							</table>
+							
+							 <button id ="btnSaveClient" onclick="saveClient();">Save Client</button><br>
+							
+							</div>
+	    					<div id="SearchByAddressGridHeader" style="display:none;"> 
+							<h5  style="font-size: 20px;font-family: Calibri;color:#ffffff;"> Search By Address </h5>
+							Address: <input type="text" id="inputSearchAddress">
+							 <button id ="btnSearchByAddress" onclick="searchByAddress();">Search By Address</button><br>
+							</div>
+	    					<div id="SearchByHashGridHeader" style="display:none;">
+							<h5  style="font-size: 20px;font-family: Calibri;color:#ffffff;"> Search By Hash </h5>
+							Hash: <input type="text" id="inputSearchHash">
+							 <button id ="btnSearchByHash" onclick="searchByHash();">Search By Hash</button><br>
+							 </div>
+	    			</div>	
+				<div id="ContentDetails" class="ContentClass">
+						<div id="RequestValidationGrid" style="display:none;"> </div>
+	    					<div id="SignValidationGrid" style="display:none;"> 
+							
+							 Signature: <input type="text" id="inputSign">
+							 <button id ="btnSignValidation" onclick="signValidation();">Sign Validation</button><br>
+							</div>
+	    					<div id="CreateClientGrid" style="display:none;"></div>
+	    					<div id="SearchByAddressGrid" style="display:none;"> 
+							</div>
+	    					<div id="SearchByHashGrid" style="display:none;">
+							</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
